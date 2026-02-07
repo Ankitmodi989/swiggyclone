@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import RestCard from "./Resrcard";
 import Shimmer from "./simmer"
+import dotenv from "dotenv";
+
+// dotenv.config();
 
 export default function Restaurant(){
    
@@ -13,7 +16,7 @@ export default function Restaurant(){
     
      async function fetchData() {
         
-        const proxyServer = "https://cors-anywhere.herokuapp.com/"
+        const proxyServer = process.env.PROXY_SERVER_URL||"https://cors-anywhere.herokuapp.com/";
         const swiggyAPI = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true";
         const response =  await fetch(proxyServer+swiggyAPI);
         const data = await response.json();

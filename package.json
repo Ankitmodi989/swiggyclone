@@ -1,7 +1,25 @@
 {
+  "name": "swiggyclone",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Ankitmodi989/swiggyclone#readme",
+  "bugs": {
+    "url": "https://github.com/Ankitmodi989/swiggyclone/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ankitmodi989/swiggyclone.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "@tailwindcss/postcss": "^4.1.11",
+    "dotenv": "^17.2.4",
     "parcel": "^2.15.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -9,5 +27,16 @@
     "react-router": "^7.6.3",
     "redux": "^5.0.1",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.1",
+    "events": "^3.3.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "string_decoder": "^1.3.0",
+    "vm-browserify": "^1.1.2"
   }
 }
